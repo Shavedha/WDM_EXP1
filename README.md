@@ -1,5 +1,5 @@
-### EX1 Creation of Employee, Weather dataset in WEKA Data Mining and Analysis Tool and perform Preprocessing
-### DATE: 
+### EX01 -- Creation of Employee, Weather dataset in WEKA Data Mining and Analysis Tool and perform Preprocessing
+### DATE: 10.02.2024
 ### AIM: 
   To Create Employee, Weather dataset in WEKA Data Mining and Analysis Tool and perform preprocessing
 ### PROCEDURE: 
@@ -18,11 +18,11 @@ Employee Data
 @attribute gender {male,female}
 @attribute phone numeric
 @data
-x,101,low,2,male,250311
-y,102,high,3,female,251665
-z,103,medium,1,male,240238
-a,104,low,5,female,200200
-b,105,high,2,male,240240
+x,121,low,2,male,278561
+y,122,high,3,female,278562
+z,123,medium,1,male,278563
+a,124,low,5,female,278564
+b,125,high,2,male,278565
 
 --------------
 Weather Data
@@ -34,16 +34,16 @@ Weather Data
 @attribute windy {true,false}
 @attribute play {yes,no}
 @data
-sunny,85.0,85.0,false,no
-overcast,80.0,90.0,true,no
-sunny,83.0,86.0,false,yes
-rainy,70.0,86.0,false,yes
-rainy,68.0,80.0,false,yes
-rainy,65.0,70.0,true,no
-overcast,64.0,65.0,false,yes
-sunny,72.0,95.0,true,no
-sunny,69.0,70.0,false,yes
-rainy,75.0,80.0,false,yes
+sunny,65,85,false,no
+overcast,82,90,true,no
+sunny,89,86,false,yes
+rainy,67,86,false,yes
+rainy,60,80,false,yes
+rainy,89,70,true,no
+overcast,65,65,false,yes
+sunny,71,95,true,no
+sunny,63,70,false,yes
+rainy,75,80,false,yes
 ```
 3) After that the file is saved with .arff file format.
 4) Minimize the arff file and then open Start -> Programs -> weka-3-4.
@@ -53,7 +53,11 @@ rainy,75.0,80.0,false,yes
 8) Click on edit button which shows employee table on weka.
 
 ### OUTPUT:
+### Employee Table
+<img width="274" alt="emp" src="https://github.com/Shavedha/WDM_EXP1/assets/93427376/8245e4b0-40b1-45cc-aac2-ca4782075c9b">
 
+### Weather Table
+<img width="320" alt="wthr" src="https://github.com/Shavedha/WDM_EXP1/assets/93427376/e7f812f7-0171-4d6f-9203-67e1dee7292e">
 
 
 ### PREPROCESSING
@@ -75,6 +79,11 @@ rainy,75.0,80.0,false,yes
 14) Click on the Edit button, it shows a new Weather Table on Weka.
 
 ### OUTPUT:
+### Employee Table after adding attribute Address:
+<img width="382" alt="emp add" src="https://github.com/Shavedha/WDM_EXP1/assets/93427376/41a32099-04db-4e72-b5a9-4a16e91d0abb">
+
+### Weather Table after adding attribute Climate:
+<img width="357" alt="wthr add" src="https://github.com/Shavedha/WDM_EXP1/assets/93427376/a45b9bcc-a3b5-4221-b027-25e3e7a24677">
 
 ### 2) Remove -> Pre-Processing Technique:
 
@@ -91,6 +100,12 @@ rainy,75.0,80.0,false,yes
 11) Click on the Edit button, it shows a new Weather Table on Weka.
 
 ### OUTPUT:
+### Employee Table after removing attribute Phone:
+<img width="316" alt="emp remove" src="https://github.com/Shavedha/WDM_EXP1/assets/93427376/418b377d-f5d7-41ef-993e-ba050f9ec2cc">
+
+### Weather Table after removing attribute Windy:
+<img width="342" alt="wthr remove" src="https://github.com/Shavedha/WDM_EXP1/assets/93427376/6079291f-6084-4352-8380-761ecb2592cd">
+
 
 ### Normalize -> Pre-Processing Technique:
 
@@ -107,5 +122,11 @@ rainy,75.0,80.0,false,yes
 11) Click on the Edit button, it shows a new Weather Table with normalized values on Weka.
 
 ### OUTPUT:
+### Employee Table after Normalizing ID, exp:
+<img width="337" alt="emp normalise" src="https://github.com/Shavedha/WDM_EXP1/assets/93427376/5635e108-7d9a-492d-b88b-c194d5d72181">
+
+### Weather Table after Normalizing Temparature,Humidity:
+<img width="375" alt="wthr normalize" src="https://github.com/Shavedha/WDM_EXP1/assets/93427376/2d00f79a-6be4-4c74-8c27-54cd3bb9c26f">
+
 ### RESULT: 
   Thus the program for generating employee and weather datasets has been developed, and preprocessing has been accomplished successfully.
